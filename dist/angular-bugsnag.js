@@ -61,6 +61,10 @@
                         return _self;
                     };
 
+                    this.refresh = function () {
+                        _bugsnag.refresh();
+                    }
+
                     this.$get = ['$injector', function ($injector) {
                         if (_beforeNotify) {
                             _bugsnag.beforeNotify = angular.isString(_beforeNotify) ? $injector.get(_beforeNotify) : $injector.invoke(_beforeNotify);
