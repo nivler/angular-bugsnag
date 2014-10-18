@@ -23,7 +23,7 @@
         "Makefile"
     ],
     "dependencies": {
-        "angular": "~1.2.17",
+        "angular": "*",
         "bugsnag": "~2.3.5"
     },
     "devDependencies": {
